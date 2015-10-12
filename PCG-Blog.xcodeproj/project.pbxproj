@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44D3CD521BCB24950074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD511BCB24950074E300 /* main.cpp */; };
+		44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD581BCB24B40074E300 /* random_cave.cpp */; settings = {ASSET_TAGS = (); }; };
+		44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD591BCB24B40074E300 /* random_dungeon.cpp */; settings = {ASSET_TAGS = (); }; };
+		44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5C1BCB24EA0074E300 /* main.cpp */; settings = {ASSET_TAGS = (); }; };
+		44D3CD601BCB252B0074E300 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5E1BCB252B0074E300 /* utility.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,13 @@
 
 /* Begin PBXFileReference section */
 		44D3CD4E1BCB24950074E300 /* PCG-Blog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PCG-Blog"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44D3CD511BCB24950074E300 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		44D3CD581BCB24B40074E300 /* random_cave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_cave.cpp; sourceTree = "<group>"; };
+		44D3CD591BCB24B40074E300 /* random_dungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_dungeon.cpp; sourceTree = "<group>"; };
+		44D3CD5C1BCB24EA0074E300 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		44D3CD5E1BCB252B0074E300 /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility.cpp; sourceTree = "<group>"; };
+		44D3CD5F1BCB252B0074E300 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
+		44D3CD611BCB304C0074E300 /* random_dungeon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random_dungeon.h; sourceTree = "<group>"; };
+		44D3CD621BCBF3C10074E300 /* random_cave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random_cave.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,13 @@
 		44D3CD501BCB24950074E300 /* PCG-Blog */ = {
 			isa = PBXGroup;
 			children = (
-				44D3CD511BCB24950074E300 /* main.cpp */,
+				44D3CD5C1BCB24EA0074E300 /* main.cpp */,
+				44D3CD621BCBF3C10074E300 /* random_cave.h */,
+				44D3CD581BCB24B40074E300 /* random_cave.cpp */,
+				44D3CD611BCB304C0074E300 /* random_dungeon.h */,
+				44D3CD591BCB24B40074E300 /* random_dungeon.cpp */,
+				44D3CD5F1BCB252B0074E300 /* utility.h */,
+				44D3CD5E1BCB252B0074E300 /* utility.cpp */,
 			);
 			path = "PCG-Blog";
 			sourceTree = "<group>";
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D3CD521BCB24950074E300 /* main.cpp in Sources */,
+				44D3CD601BCB252B0074E300 /* utility.cpp in Sources */,
+				44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */,
+				44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */,
+				44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
