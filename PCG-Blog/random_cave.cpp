@@ -15,7 +15,7 @@ RandomCave::RandomCave( unsigned int width, unsigned int height, unsigned int pe
     m_height = height;
     
     m_map = random_cave_map( percent );
-    make_caves( m_map );
+    make_caves( m_map, 5 );
 }
 
 bool RandomCave::is_out_of_bounds( int x, int y ) {
@@ -76,10 +76,12 @@ char RandomCave::random_percent( int percent ) {
     return ( Utility::random_in_range( 0, 100 ) < percent ) ? '#' : ' ';
 }
 
-void RandomCave::make_caves( std::vector<char> &map ) {
-    for ( int row = 0, col = 0; row < m_width; row++ ) {
-        for ( col = 0; col < m_height; col++ ) {
-            map[ row * m_width + col ] = place_wall( row, col, map );
+void RandomCave::make_caves( std::vector<char> &map, unsigned int iterations ) {
+    for ( unsigned int i = 0; i < iterations; i++ ) {
+        for ( int row = 0, col = 0; row < m_width; row++ ) {
+            for ( col = 0; col < m_height; col++ ) {
+                map[ row * m_width + col ] = place_wall( row, col, map );
+            }
         }
     }
 }
@@ -96,7 +98,7 @@ std::vector<char> RandomCave::random_cave_map( unsigned int percent ) {
                 map_middle = ( m_height / 2 );
                 
                 if ( row == map_middle )
-                    map[ row * m_width + col ] = 0;
+                    map[ row * m_width + col ] = '#';
                 else
                     map[ row * m_width + col ] = random_percent( percent );
             }

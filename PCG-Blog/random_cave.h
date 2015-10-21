@@ -27,7 +27,7 @@ private:
     char random_percent( int percent );
     
     std::vector<char> random_cave_map( unsigned int percent );
-    void make_caves( std::vector<char> &map );
+    void make_caves( std::vector<char> &map, unsigned int iterations );
 public:
     RandomCave( unsigned int width, unsigned int height, unsigned int percent );
     
