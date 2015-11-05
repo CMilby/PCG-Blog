@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD581BCB24B40074E300 /* random_cave.cpp */; settings = {ASSET_TAGS = (); }; };
-		44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD591BCB24B40074E300 /* random_dungeon.cpp */; settings = {ASSET_TAGS = (); }; };
-		44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5C1BCB24EA0074E300 /* main.cpp */; settings = {ASSET_TAGS = (); }; };
-		44D3CD601BCB252B0074E300 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5E1BCB252B0074E300 /* utility.cpp */; settings = {ASSET_TAGS = (); }; };
-		44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */; settings = {ASSET_TAGS = (); }; };
-		44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD861BCDB1D70074E300 /* maze.cpp */; settings = {ASSET_TAGS = (); }; };
+		44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD581BCB24B40074E300 /* random_cave.cpp */; };
+		44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD591BCB24B40074E300 /* random_dungeon.cpp */; };
+		44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5C1BCB24EA0074E300 /* main.cpp */; };
+		44D3CD601BCB252B0074E300 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5E1BCB252B0074E300 /* utility.cpp */; };
+		44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */; };
+		44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD861BCDB1D70074E300 /* maze.cpp */; };
+		44F722501BEABEC20022754F /* perlin_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44F7224E1BEABEC20022754F /* perlin_noise.cpp */; };
+		44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44F722511BEAD3D90022754F /* midpoint_displacement.cpp */; };
 		44F8A45A1BD1C493005AA89C /* libpngwriter.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F8A4591BD1C493005AA89C /* libpngwriter.dylib */; };
 		44F8A45C1BD1C764005AA89C /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F8A45B1BD1C764005AA89C /* libfreetype.6.dylib */; };
 		44F8A45E1BD1C777005AA89C /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F8A45D1BD1C777005AA89C /* libpng16.16.dylib */; };
@@ -43,6 +45,10 @@
 		44D3CD841BCDAF7D0074E300 /* diamond_square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diamond_square.h; sourceTree = "<group>"; };
 		44D3CD861BCDB1D70074E300 /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
 		44D3CD871BCDB1D70074E300 /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
+		44F7224E1BEABEC20022754F /* perlin_noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perlin_noise.cpp; sourceTree = "<group>"; };
+		44F7224F1BEABEC20022754F /* perlin_noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin_noise.h; sourceTree = "<group>"; };
+		44F722511BEAD3D90022754F /* midpoint_displacement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = midpoint_displacement.cpp; sourceTree = "<group>"; };
+		44F722521BEAD3D90022754F /* midpoint_displacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = midpoint_displacement.h; sourceTree = "<group>"; };
 		44F8A4591BD1C493005AA89C /* libpngwriter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpngwriter.dylib; path = /usr/local/lib/libpngwriter.dylib; sourceTree = "<absolute>"; };
 		44F8A45B1BD1C764005AA89C /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = /usr/local/Cellar/freetype/2.6_1/lib/libfreetype.6.dylib; sourceTree = "<absolute>"; };
 		44F8A45D1BD1C777005AA89C /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = /usr/local/Cellar/libpng/1.6.18/lib/libpng16.16.dylib; sourceTree = "<absolute>"; };
@@ -89,8 +95,12 @@
 				44D3CD581BCB24B40074E300 /* random_cave.cpp */,
 				44D3CD871BCDB1D70074E300 /* maze.h */,
 				44D3CD861BCDB1D70074E300 /* maze.cpp */,
+				44F722521BEAD3D90022754F /* midpoint_displacement.h */,
+				44F722511BEAD3D90022754F /* midpoint_displacement.cpp */,
 				44D3CD841BCDAF7D0074E300 /* diamond_square.h */,
 				44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */,
+				44F7224F1BEABEC20022754F /* perlin_noise.h */,
+				44F7224E1BEABEC20022754F /* perlin_noise.cpp */,
 				44D3CD5F1BCB252B0074E300 /* utility.h */,
 				44D3CD5E1BCB252B0074E300 /* utility.cpp */,
 			);
@@ -165,9 +175,11 @@
 			files = (
 				44D3CD601BCB252B0074E300 /* utility.cpp in Sources */,
 				44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */,
+				44F722501BEABEC20022754F /* perlin_noise.cpp in Sources */,
 				44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */,
 				44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */,
 				44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */,
+				44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */,
 				44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

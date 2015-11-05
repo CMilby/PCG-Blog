@@ -36,12 +36,19 @@ std::vector<char> Utility::blank_map( char delim, unsigned int width, unsigned i
     return map;
 }
 
+double Utility::scale( double value, double min, double max ) {
+    return ( value - min ) / ( max - min );
+}
+
 int Utility::random_in_range( int min, int max ) {
     return rand() % ( max - min + 1 ) + min;
 }
 
 float Utility::random_in_range( float min, float max ) {
-    return  ( max - min ) * ( ( ( ( float ) rand() ) / ( float ) RAND_MAX ) ) + min ;
+    float random = ( (float ) rand() ) / ( float ) RAND_MAX;
+    float diff = max - min;
+    float r = random * diff;
+    return min + r;
 }
 
 int Utility::clamp( int value, int min, int max ) {
@@ -49,7 +56,7 @@ int Utility::clamp( int value, int min, int max ) {
         return min;
     if ( value > max )
         return max;
-    return value; 
+   return value;
 }
 
 

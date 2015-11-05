@@ -16,10 +16,15 @@
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define MAX(a,b) (((a)<(b))?(b):(a))
 
-struct Point {
+class Point {
     
+public:
     int m_x;
     int m_y;
+    
+    Point() {
+        m_x = m_y = 0;
+    }
     
     Point( int x, int y ) {
         m_x = x;
@@ -33,6 +38,8 @@ namespace Utility {
     void print_map( const std::vector<std::string> &map, unsigned int width, unsigned int height );
     
     std::vector<char> blank_map( char delim, unsigned int width, unsigned int height );
+    
+    double scale( double value, double min, double max );
     
     int random_in_range( int min, int max );
     float random_in_range( float min, float max );
