@@ -17,24 +17,22 @@
 class DiamondSquare {
     
 private:
-    std::vector<int> m_map;
-    unsigned int m_size;
+    std::vector<float> m_map;
     
-    int point_to_single( int x, int y ) const;
-    int point_to_single( const Point &point ) const;
+    unsigned int m_width;
+    unsigned int m_height;
     
-    void populate_map();
-    
-    void diamond_square( const Point &p1, const Point &p2, const Point &p3, const Point &p4, float magnitude );
-    int square_step( unsigned int i, unsigned int j, int halfSpace, float magnitude );
-    int diamond_step( unsigned int i, unsigned int j, int halfSpace, float magnitude );
-    
-    bool is_valid( const Point &point );
-    bool is_valid( int x, int y );
 public:
-    DiamondSquare( unsigned int size );
-  
-    std::vector<std::string> get_map() const;
+    DiamondSquare( unsigned int width, unsigned int height, int featureSize );
+    
+    void diamond_square( int stepSize, float scale );
+
+    void diamond_step( int x, int y, int size, float value );
+    void square_step( int x, int y, int size, float value );
+    
+    float sample( int x, int y );
+    void setSample( int x, int y, float value );
+    
     void to_png( const std::string &file );
 };
 

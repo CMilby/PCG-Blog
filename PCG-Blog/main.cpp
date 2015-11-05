@@ -37,10 +37,10 @@ int main() {
     // Maze maze( width, height );
     // Utility::print_map( maze.get_map(), width, height );
     
-    MidpointDisplacement midpoint( 512, 1024 );
+    MidpointDisplacement midpoint( 512, 4096 );
     midpoint.to_png( file );
     
-    // DiamondSquare diamond( width );
+    // DiamondSquare diamond( width, height, 32 );
     // diamond.to_png( file );
     
     /*PerlinNoise noise( seed );
@@ -54,13 +54,12 @@ int main() {
             
             float n = noise.perlin( x * 10, y * 10, 0.8 );
             
-            // n = 20 * noise.perlin(x, y, 0.8);
-            // n = n - floor(n);
+            n = 20 * noise.perlin(x, y, 0.8);
+            n = n - floor(n);
         
             png.plot( i, j, n, n, n );
         }
     }
-    
     png.close();*/
     
     return 0;
