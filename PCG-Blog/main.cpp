@@ -44,23 +44,7 @@ int main() {
     // diamond.to_png( file );
     
     PerlinNoise noise( seed );
-    
-    pngwriter png( width, height, 0, file.c_str() );
-    
-    for ( unsigned int i = 0; i < height; i++ ) {
-        for ( unsigned int j = 0; j < width; j++ ) {
-            float x = ( float ) j / ( float ) width;
-            float y = ( float ) i / ( float ) height;
-            
-            float n = noise.perlin( x * 10, y * 10, 0.8 );
-            
-            n = 20 * noise.perlin(x, y, 0.8);
-            n = n - floor(n);
-        
-            png.plot( i, j, n, n, n );
-        }
-    }
-    png.close();
+    noise.to_png( file, width, height );
     
     return 0;
 }

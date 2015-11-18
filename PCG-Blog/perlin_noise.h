@@ -22,7 +22,7 @@ public:
     PerlinNoise( int seed );
     virtual ~PerlinNoise();
     
-    void to_png( const std::string &file, int width, int height, PerlinNoise &noise );
+    void to_png( const std::string &file, int width, int height );
     
     float lerp( float t, float a, float b );
     float grad( int hash, float x, float y, float z );

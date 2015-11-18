@@ -90,7 +90,7 @@ float PerlinNoise::perlin( float x, float y, float z ) {
     return ( res + 1.0 ) / 2.0;
 }
 
-void PerlinNoise::to_png( const std::string &file, int width, int height, PerlinNoise &noise ) {
+void PerlinNoise::to_png( const std::string &file, int width, int height ) {
     pngwriter png( width, height, 0, file.c_str() );
     
     for ( unsigned int i = 0; i < height; i++ ) {
@@ -98,10 +98,10 @@ void PerlinNoise::to_png( const std::string &file, int width, int height, Perlin
             float x = ( float ) j / ( float ) width;
             float y = ( float ) i / ( float ) height;
             
-            float n = noise.perlin( x * 10, y * 10, 0.8 );
+            float n = perlin( x * 10, y * 10, 0.8 ); 
             
-            n = 20 * noise.perlin(x, y, 0.8);
-            n = n - floor(n);
+            // n = 20 * noise.perlin(x, y, 0.8);
+            // n = n - floor(n);
             
             png.plot( i, j, n, n, n );
         }
