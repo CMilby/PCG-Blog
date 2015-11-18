@@ -12,6 +12,8 @@
 #include <cmath>
 #include <random>
 
+#include <pngwriter.h>
+
 #include "utility.h"
 
 PerlinNoise::PerlinNoise( int seed ) {
@@ -88,6 +90,24 @@ float PerlinNoise::perlin( float x, float y, float z ) {
     return ( res + 1.0 ) / 2.0;
 }
 
+void PerlinNoise::to_png( const std::string &file, int width, int height, PerlinNoise &noise ) {
+    pngwriter png( width, height, 0, file.c_str() );
+    
+    for ( unsigned int i = 0; i < height; i++ ) {
+        for ( unsigned int j = 0; j < width; j++ ) {
+            float x = ( float ) j / ( float ) width;
+            float y = ( float ) i / ( float ) height;
+            
+            float n = noise.perlin( x * 10, y * 10, 0.8 );
+            
+            n = 20 * noise.perlin(x, y, 0.8);
+            n = n - floor(n);
+            
+            png.plot( i, j, n, n, n );
+        }
+    }
+    png.close();
+}
 
 
 

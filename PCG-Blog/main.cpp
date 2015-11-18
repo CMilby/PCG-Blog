@@ -37,13 +37,13 @@ int main() {
     // Maze maze( width, height );
     // Utility::print_map( maze.get_map(), width, height );
     
-    MidpointDisplacement midpoint( 512, 4096 );
-    midpoint.to_png( file );
+    // MidpointDisplacement midpoint( 512, 4096 );
+    // midpoint.to_png( file );
     
     // DiamondSquare diamond( width, height, 32 );
     // diamond.to_png( file );
     
-    /*PerlinNoise noise( seed );
+    PerlinNoise noise( seed );
     
     pngwriter png( width, height, 0, file.c_str() );
     
@@ -60,7 +60,7 @@ int main() {
             png.plot( i, j, n, n, n );
         }
     }
-    png.close();*/
+    png.close();
     
     return 0;
 }

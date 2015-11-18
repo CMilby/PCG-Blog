@@ -9,6 +9,7 @@
 #ifndef PERLIN_NOISE_H
 #define PERLIN_NOISE_H
 
+#include <string>
 #include <vector>
 
 class PerlinNoise {
@@ -20,6 +21,8 @@ private:
 public:
     PerlinNoise( int seed );
     virtual ~PerlinNoise();
+    
+    void to_png( const std::string &file, int width, int height, PerlinNoise &noise );
     
     float lerp( float t, float a, float b );
     float grad( int hash, float x, float y, float z );
