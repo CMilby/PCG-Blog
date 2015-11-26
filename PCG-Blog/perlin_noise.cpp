@@ -100,8 +100,8 @@ void PerlinNoise::to_png( const std::string &file, int width, int height ) {
             
             float n = perlin( x * 10, y * 10, 0.8 ); 
             
-            // n = 20 * noise.perlin(x, y, 0.8);
-            // n = n - floor(n);
+            n = 20 * perlin(x, y, 0.8);
+            n = n - floor(n);
             
             png.plot( i, j, n, n, n );
         }

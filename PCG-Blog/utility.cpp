@@ -8,6 +8,9 @@
 
 #include "utility.h"
 
+unsigned int Utility::OFFSET_BASIS = 2166136261;
+unsigned int Utility::FNV_PRIME = 16777619;
+
 void Utility::print_map( const std::vector<char> &map, unsigned int width, unsigned int height ) {
     for ( unsigned int i = 0; i < height; i++ ) {
         for ( unsigned int j = 0; j < width; j++ ) {
@@ -59,8 +62,12 @@ int Utility::clamp( int value, int min, int max ) {
    return value;
 }
 
-
-
-
+float Utility::clampf( float value, float min, float max ) {
+    if ( value < min )
+        return min;
+    if ( value > max )
+        return max;
+    return value;
+}
 
 

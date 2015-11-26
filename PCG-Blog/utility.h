@@ -16,6 +16,28 @@
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define MAX(a,b) (((a)<(b))?(b):(a))
 
+class Vector3 {
+
+public:
+    float m_x;
+    float m_y;
+    float m_z;
+    
+    Vector3() {
+        m_x = m_y = m_z = 0.0f;
+    }
+    
+    Vector3( float x, float y, float z ) {
+        m_x = x;
+        m_y = y;
+        m_z = z;
+    }
+    
+    inline Vector3 operator-( const Vector3 &vect ) const {
+        return Vector3( m_x - vect.m_x, m_y - vect.m_y, m_z - vect.m_z );
+    }
+};
+
 class Point {
     
 public:
@@ -30,9 +52,16 @@ public:
         m_x = x;
         m_y = y;
     }
+    
+    inline Point operator-( const Point &p ) const {
+        return Point( m_x - p.m_x, m_y - p.m_y );
+    }
 };
 
 namespace Utility {
+    
+    extern unsigned int OFFSET_BASIS;
+    extern unsigned int FNV_PRIME;
     
     void print_map( const std::vector<char> &map, unsigned int width, unsigned int height );
     void print_map( const std::vector<std::string> &map, unsigned int width, unsigned int height );
@@ -43,7 +72,10 @@ namespace Utility {
     
     int random_in_range( int min, int max );
     float random_in_range( float min, float max );
+    unsigned int lcg_random( unsigned int last );
+    
     int clamp( int value, int min, int max );
+    float clampf( float value, float min, float max );
 }
 
 #endif

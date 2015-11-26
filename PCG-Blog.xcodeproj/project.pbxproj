@@ -13,6 +13,7 @@
 		44D3CD601BCB252B0074E300 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5E1BCB252B0074E300 /* utility.cpp */; };
 		44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */; };
 		44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD861BCDB1D70074E300 /* maze.cpp */; };
+		44EF007F1BFF6D8F00B5AAFF /* worley_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44EF007D1BFF6D8F00B5AAFF /* worley_noise.cpp */; };
 		44F722501BEABEC20022754F /* perlin_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44F7224E1BEABEC20022754F /* perlin_noise.cpp */; };
 		44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44F722511BEAD3D90022754F /* midpoint_displacement.cpp */; };
 		44F8A45A1BD1C493005AA89C /* libpngwriter.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F8A4591BD1C493005AA89C /* libpngwriter.dylib */; };
@@ -45,6 +46,8 @@
 		44D3CD841BCDAF7D0074E300 /* diamond_square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diamond_square.h; sourceTree = "<group>"; };
 		44D3CD861BCDB1D70074E300 /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
 		44D3CD871BCDB1D70074E300 /* maze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
+		44EF007D1BFF6D8F00B5AAFF /* worley_noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = worley_noise.cpp; sourceTree = "<group>"; };
+		44EF007E1BFF6D8F00B5AAFF /* worley_noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = worley_noise.h; sourceTree = "<group>"; };
 		44F7224E1BEABEC20022754F /* perlin_noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perlin_noise.cpp; sourceTree = "<group>"; };
 		44F7224F1BEABEC20022754F /* perlin_noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perlin_noise.h; sourceTree = "<group>"; };
 		44F722511BEAD3D90022754F /* midpoint_displacement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = midpoint_displacement.cpp; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */,
 				44F7224F1BEABEC20022754F /* perlin_noise.h */,
 				44F7224E1BEABEC20022754F /* perlin_noise.cpp */,
+				44EF007E1BFF6D8F00B5AAFF /* worley_noise.h */,
+				44EF007D1BFF6D8F00B5AAFF /* worley_noise.cpp */,
 				44D3CD5F1BCB252B0074E300 /* utility.h */,
 				44D3CD5E1BCB252B0074E300 /* utility.cpp */,
 			);
@@ -181,6 +186,7 @@
 				44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */,
 				44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */,
 				44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */,
+				44EF007F1BFF6D8F00B5AAFF /* worley_noise.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

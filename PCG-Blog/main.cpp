@@ -18,13 +18,14 @@
 #include "random_cave.h"
 #include "random_dungeon.h"
 #include "utility.h"
+#include "worley_noise.h"
 
 int main() {
     unsigned int seed = ( unsigned int ) time( 0 );
     srand( seed );
     
-    unsigned int width = 1024;
-    unsigned int height = 1024;
+    unsigned int width = 200;
+    unsigned int height = 200;
     
     std::string file = "/Users/Craig/Downloads/output.png";
     
@@ -43,8 +44,23 @@ int main() {
     // DiamondSquare diamond( width, height, 32 );
     // diamond.to_png( file );
     
-    PerlinNoise noise( seed );
-    noise.to_png( file, width, height );
+    // PerlinNoise noise( seed );
+    // noise.to_png( file, width, height );
+    
+    WorleyNoise worley;
+    worley.to_png( file );
     
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
