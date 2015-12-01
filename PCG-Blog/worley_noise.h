@@ -81,33 +81,6 @@ public:
     virtual ~WorleyNoise();
     
     void to_png( const std::string &file );
-    
-/*private:
-    int m_seed;
-    
-    float combine_function_1( float arr[] );
-    float combine_function_2( float arr[] );
-    float combine_function_3( float arr[] );
-    
-    float euclidian_distance( Vector3 p1, Vector3 p2 );
-    float manhattan_distance( Vector3 p1, Vector3 p2 );
-    float chebyshev_distance( Vector3 p1, Vector3 p2 );
-    
-    unsigned int lookup( unsigned int value );
-    void insert( float arr[] , float value );
-    unsigned int lcg_random( unsigned int last );
-    unsigned int hash( unsigned int i, unsigned int j, unsigned int k );
-    
-    float noise( Vector3 input );
-    
-public:
-    const int OFFSET_BASIS = 2166136261;
-    const int FNV_PRIME = 16777619;
-    
-    WorleyNoise( int seed );
-    virtual ~WorleyNoise();
-    
-    void to_png( const std::string &file, unsigned int width, unsigned int height );*/
 };
 
 #endif /* worley_noise_h */

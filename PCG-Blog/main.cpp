@@ -24,8 +24,8 @@ int main() {
     unsigned int seed = ( unsigned int ) time( 0 );
     srand( seed );
     
-    unsigned int width = 200;
-    unsigned int height = 200;
+    unsigned int width = 4096;
+    unsigned int height = 4096;
     
     std::string file = "/Users/Craig/Downloads/output.png";
     
@@ -47,8 +47,8 @@ int main() {
     // PerlinNoise noise( seed );
     // noise.to_png( file, width, height );
     
-    WorleyNoise worley;
-    worley.to_png( file );
+    // WorleyNoise worley;
+    // worley.to_png( file );
     
     return 0;
 }
