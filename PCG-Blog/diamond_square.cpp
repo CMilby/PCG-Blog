@@ -84,10 +84,13 @@ void DiamondSquare::setSample( int x, int y, float value ) {
 void DiamondSquare::to_png( const std::string &file ) {
     pngwriter png( m_width, m_height, 0, file.c_str() );
 
+    float min = Utility::min( m_map );
+    float max = Utility::max( m_map );
+    
     for ( unsigned int i = 0; i < m_height; i++ ) {
         for ( unsigned int j = 0; j < m_width; j++ ) {
             double value = ( double ) m_map[ i * m_width + j ];
-            value = Utility::scale( value, 0.0, 1.0 );
+            value = Utility::scale( value, 0.0, 1.0, min, max );
             png.plot( i, j, value, value, value );
         }
     }

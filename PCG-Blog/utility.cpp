@@ -39,8 +39,28 @@ std::vector<char> Utility::blank_map( char delim, unsigned int width, unsigned i
     return map;
 }
 
-double Utility::scale( double value, double min, double max ) {
-    return ( value - min ) / ( max - min );
+float Utility::scale( float x, float a, float b, float min, float max ) {
+     return ( ( ( b - a ) * ( x - min ) ) / ( max - min ) ) + a;
+}
+
+float Utility::min( const std::vector<float> &vect ) {
+    int min = vect[ 0 ];
+    for ( unsigned int i = 1; i < vect.size(); i++ ) {
+        if ( vect[ i ] < min ) {
+            min = vect[ i ];
+        }
+    }
+    return min;
+}
+
+float Utility::max( const std::vector<float> &vect ) {
+    int max = vect[ 0 ];
+    for ( unsigned int i = 1; i < vect.size(); i++ ) {
+        if ( vect[ i ] > max ) {
+            max = vect[ i ];
+        }
+    }
+    return max;
 }
 
 int Utility::random_in_range( int min, int max ) {
@@ -69,5 +89,15 @@ float Utility::clampf( float value, float min, float max ) {
         return max;
     return value;
 }
+
+float Utility::dot( const int *g, const float x, const float y, const float z ) {
+    return g[ 0 ] * x + g[ 1 ] * y + g[ 2 ] * z;
+}
+
+int Utility::fast_floor( const float x ) {
+    return x > 0 ? ( int ) x : ( int ) x - 1;
+}
+
+
 
 

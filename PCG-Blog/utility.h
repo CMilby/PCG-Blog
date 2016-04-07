@@ -68,7 +68,9 @@ namespace Utility {
     
     std::vector<char> blank_map( char delim, unsigned int width, unsigned int height );
     
-    double scale( double value, double min, double max );
+    float scale( float x, float a, float b, float min, float max );
+    float min( const std::vector<float> &vect );
+    float max( const std::vector<float> &vect );
     
     int random_in_range( int min, int max );
     float random_in_range( float min, float max );
@@ -76,6 +78,9 @@ namespace Utility {
     
     int clamp( int value, int min, int max );
     float clampf( float value, float min, float max );
+    
+    float dot( const int *g, const float x, const float y, const float z );
+    int fast_floor( const float x );
 }
 
 #endif
