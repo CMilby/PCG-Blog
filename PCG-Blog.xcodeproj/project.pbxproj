@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		441B8ECA1CB714D400B90CCF /* simplex_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 441B8EC71CB714D400B90CCF /* simplex_noise.cpp */; };
+		443F54A01D8DA47A00A747EA /* mersenneTwister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F54981D8DA47A00A747EA /* mersenneTwister.cpp */; };
+		443F54A11D8DA47A00A747EA /* random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F549A1D8DA47A00A747EA /* random.cpp */; };
+		443F54A31D8DA47A00A747EA /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F549E1D8DA47A00A747EA /* utility.cpp */; };
+		443F54A61D8DA4A800A747EA /* simplexNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F54A41D8DA4A800A747EA /* simplexNoise.cpp */; };
+		443F54A91D8DA52200A747EA /* noiseLayering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F54A71D8DA52200A747EA /* noiseLayering.cpp */; };
 		44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD581BCB24B40074E300 /* random_cave.cpp */; };
 		44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD591BCB24B40074E300 /* random_dungeon.cpp */; };
 		44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5C1BCB24EA0074E300 /* main.cpp */; };
-		44D3CD601BCB252B0074E300 /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5E1BCB252B0074E300 /* utility.cpp */; };
 		44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */; };
 		44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD861BCDB1D70074E300 /* maze.cpp */; };
 		44EF007F1BFF6D8F00B5AAFF /* worley_noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44EF007D1BFF6D8F00B5AAFF /* worley_noise.cpp */; };
@@ -35,14 +38,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		441B8EC71CB714D400B90CCF /* simplex_noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simplex_noise.cpp; sourceTree = "<group>"; };
-		441B8EC81CB714D400B90CCF /* simplex_noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplex_noise.h; sourceTree = "<group>"; };
+		443F54981D8DA47A00A747EA /* mersenneTwister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mersenneTwister.cpp; path = Common/mersenneTwister.cpp; sourceTree = "<group>"; };
+		443F54991D8DA47A00A747EA /* mersenneTwister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mersenneTwister.h; path = Common/mersenneTwister.h; sourceTree = "<group>"; };
+		443F549A1D8DA47A00A747EA /* random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = random.cpp; path = Common/random.cpp; sourceTree = "<group>"; };
+		443F549B1D8DA47A00A747EA /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = random.h; path = Common/random.h; sourceTree = "<group>"; };
+		443F549E1D8DA47A00A747EA /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utility.cpp; path = Common/utility.cpp; sourceTree = "<group>"; };
+		443F549F1D8DA47A00A747EA /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = Common/utility.h; sourceTree = "<group>"; };
+		443F54A41D8DA4A800A747EA /* simplexNoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simplexNoise.cpp; sourceTree = "<group>"; };
+		443F54A51D8DA4A800A747EA /* simplexNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplexNoise.h; sourceTree = "<group>"; };
+		443F54A71D8DA52200A747EA /* noiseLayering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = noiseLayering.cpp; sourceTree = "<group>"; };
+		443F54A81D8DA52200A747EA /* noiseLayering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noiseLayering.h; sourceTree = "<group>"; };
 		44D3CD4E1BCB24950074E300 /* PCG-Blog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PCG-Blog"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D3CD581BCB24B40074E300 /* random_cave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_cave.cpp; sourceTree = "<group>"; };
 		44D3CD591BCB24B40074E300 /* random_dungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_dungeon.cpp; sourceTree = "<group>"; };
 		44D3CD5C1BCB24EA0074E300 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		44D3CD5E1BCB252B0074E300 /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility.cpp; sourceTree = "<group>"; };
-		44D3CD5F1BCB252B0074E300 /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility.h; sourceTree = "<group>"; };
 		44D3CD611BCB304C0074E300 /* random_dungeon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random_dungeon.h; sourceTree = "<group>"; };
 		44D3CD621BCBF3C10074E300 /* random_cave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random_cave.h; sourceTree = "<group>"; };
 		44D3CD831BCDAF7D0074E300 /* diamond_square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = diamond_square.cpp; sourceTree = "<group>"; };
@@ -74,6 +83,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		443F54971D8DA46F00A747EA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				443F54981D8DA47A00A747EA /* mersenneTwister.cpp */,
+				443F54991D8DA47A00A747EA /* mersenneTwister.h */,
+				443F549A1D8DA47A00A747EA /* random.cpp */,
+				443F549B1D8DA47A00A747EA /* random.h */,
+				443F549E1D8DA47A00A747EA /* utility.cpp */,
+				443F549F1D8DA47A00A747EA /* utility.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		44D3CD451BCB24950074E300 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +116,7 @@
 		44D3CD501BCB24950074E300 /* PCG-Blog */ = {
 			isa = PBXGroup;
 			children = (
+				443F54971D8DA46F00A747EA /* Common */,
 				44D3CD5C1BCB24EA0074E300 /* main.cpp */,
 				44D3CD611BCB304C0074E300 /* random_dungeon.h */,
 				44D3CD591BCB24B40074E300 /* random_dungeon.cpp */,
@@ -109,10 +132,10 @@
 				44F7224E1BEABEC20022754F /* perlin_noise.cpp */,
 				44EF007E1BFF6D8F00B5AAFF /* worley_noise.h */,
 				44EF007D1BFF6D8F00B5AAFF /* worley_noise.cpp */,
-				441B8EC81CB714D400B90CCF /* simplex_noise.h */,
-				441B8EC71CB714D400B90CCF /* simplex_noise.cpp */,
-				44D3CD5F1BCB252B0074E300 /* utility.h */,
-				44D3CD5E1BCB252B0074E300 /* utility.cpp */,
+				443F54A51D8DA4A800A747EA /* simplexNoise.h */,
+				443F54A41D8DA4A800A747EA /* simplexNoise.cpp */,
+				443F54A81D8DA52200A747EA /* noiseLayering.h */,
+				443F54A71D8DA52200A747EA /* noiseLayering.cpp */,
 			);
 			path = "PCG-Blog";
 			sourceTree = "<group>";
@@ -153,7 +176,7 @@
 		44D3CD461BCB24950074E300 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Craig Milby";
 				TargetAttributes = {
 					44D3CD4D1BCB24950074E300 = {
@@ -183,16 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D3CD601BCB252B0074E300 /* utility.cpp in Sources */,
 				44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */,
+				443F54A11D8DA47A00A747EA /* random.cpp in Sources */,
 				44F722501BEABEC20022754F /* perlin_noise.cpp in Sources */,
 				44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */,
-				441B8ECA1CB714D400B90CCF /* simplex_noise.cpp in Sources */,
+				443F54A91D8DA52200A747EA /* noiseLayering.cpp in Sources */,
+				443F54A01D8DA47A00A747EA /* mersenneTwister.cpp in Sources */,
+				443F54A31D8DA47A00A747EA /* utility.cpp in Sources */,
 				44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */,
 				44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */,
 				44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */,
 				44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */,
 				44EF007F1BFF6D8F00B5AAFF /* worley_noise.cpp in Sources */,
+				443F54A61D8DA4A800A747EA /* simplexNoise.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +238,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -254,8 +282,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;

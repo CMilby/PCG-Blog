@@ -90,6 +90,10 @@ float Utility::clampf( float value, float min, float max ) {
     return value;
 }
 
+float Utility::dot( const int *p_g, const float p_x, const float p_y ) {
+    return p_g[ 0 ] * p_y + p_g[ 1 ] * p_y;
+}
+
 float Utility::dot( const int *g, const float x, const float y, const float z ) {
     return g[ 0 ] * x + g[ 1 ] * y + g[ 2 ] * z;
 }
