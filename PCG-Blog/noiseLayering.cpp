@@ -69,50 +69,52 @@ Vector<float, 3> NoiseLayering::GeneratePoint( const float p_height, const float
         SetColor( myColor, 0, 0, 255 );     // Ocean
     } else if ( p_height < 0.32 ) {
         SetColor( myColor, 177, 166, 29 );  // Sand
-    } else if ( p_height > 0.7f ) {
+    } else if ( p_height > 0.85f ) {
+        SetColor( myColor, 255, 255, 255 ); // Snow
+    } else if ( p_height > 0.75f ) {
         SetColor( myColor, 132, 132, 132 ); // Rock
-    }
-    
-    if ( p_wet >= 0.75 ) {
-        if ( p_temp >= 0.75f ) {
-            // Rainforest
-            SetColor( myColor, 8, 250, 54 );
-        } else {
-            // Swamp
-            SetColor( myColor, 7, 249, 162 );
-        }
-    } else if ( p_wet >= 0.5f ) {
-        if ( p_temp >= 0.75f ) {
-            // Seasonal forest
-            SetColor( myColor, 155, 224, 35 );
-        } else if ( p_temp >= 0.5f ) {
-            // Forest
-            SetColor( myColor, 100, 148, 12 );
-        } else {
-            // Taiga
-            SetColor( myColor, 5, 102, 33 );
-        }
-    } else if ( p_wet >= 0.25f ) {
-        if ( p_temp >= 0.75f ) {
-            // Savanah
-            SetColor( myColor, 255, 255, 94 );
-        } else if ( p_temp >= 0.5f ) {
-            // Woods
-            SetColor( myColor, 46, 177, 83 );
-        } else {
-            // Taiga
-            SetColor( myColor, 5, 102, 33 );
-        }
     } else {
-        if ( p_temp >= 0.625 ) {
-            // Desert
-            SetColor( myColor, 177, 166, 29 );
-        } else if ( p_temp >= 0.25 ) {
-            // Grass Desert
-            SetColor( myColor, 247, 193, 0 );
+        if ( p_wet >= 0.75 ) {
+            if ( p_temp >= 0.75f ) {
+                // Rainforest
+                SetColor( myColor, 8, 250, 54 );
+            } else {
+                // Swamp
+                SetColor( myColor, 7, 249, 162 );
+            }
+        } else if ( p_wet >= 0.5f ) {
+            if ( p_temp >= 0.75f ) {
+                // Seasonal forest
+                SetColor( myColor, 155, 224, 35 );
+            } else if ( p_temp >= 0.5f ) {
+                // Forest
+                SetColor( myColor, 100, 148, 12 );
+            } else {
+                // Taiga
+                SetColor( myColor, 5, 102, 33 );
+            }
+        } else if ( p_wet >= 0.25f ) {
+            if ( p_temp >= 0.75f ) {
+                // Savanah
+                SetColor( myColor, 255, 255, 94 );
+            } else if ( p_temp >= 0.5f ) {
+                // Woods
+                SetColor( myColor, 46, 177, 83 );
+            } else {
+                // Taiga
+                SetColor( myColor, 5, 102, 33 );
+            }
         } else {
-            // Tundra
-            SetColor( myColor, 81, 237, 250 );
+            if ( p_temp >= 0.625 ) {
+                // Desert
+                SetColor( myColor, 177, 166, 29 );
+            } else if ( p_temp >= 0.25 ) {
+                // Grass Desert
+                SetColor( myColor, 247, 193, 0 );
+            } else {
+                // Tundra
+                SetColor( myColor, 81, 237, 250 );
+            }
         }
     }
     
