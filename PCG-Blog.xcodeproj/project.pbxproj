@@ -12,6 +12,10 @@
 		443F54A31D8DA47A00A747EA /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F549E1D8DA47A00A747EA /* utility.cpp */; };
 		443F54A61D8DA4A800A747EA /* simplexNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F54A41D8DA4A800A747EA /* simplexNoise.cpp */; };
 		443F54A91D8DA52200A747EA /* noiseLayering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443F54A71D8DA52200A747EA /* noiseLayering.cpp */; };
+		448E32CF1DAC4B0500DB5AF4 /* ppm_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448E32CD1DAC4B0500DB5AF4 /* ppm_writer.cpp */; };
+		448E32D61DAC4B1300DB5AF4 /* flood_fill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448E32D01DAC4B1300DB5AF4 /* flood_fill.cpp */; };
+		448E32D71DAC4B1400DB5AF4 /* plate_fill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448E32D21DAC4B1300DB5AF4 /* plate_fill.cpp */; };
+		448E32D81DAC4B1400DB5AF4 /* voronoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 448E32D41DAC4B1300DB5AF4 /* voronoi.cpp */; };
 		44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD581BCB24B40074E300 /* random_cave.cpp */; };
 		44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD591BCB24B40074E300 /* random_dungeon.cpp */; };
 		44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44D3CD5C1BCB24EA0074E300 /* main.cpp */; };
@@ -48,6 +52,14 @@
 		443F54A51D8DA4A800A747EA /* simplexNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simplexNoise.h; sourceTree = "<group>"; };
 		443F54A71D8DA52200A747EA /* noiseLayering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = noiseLayering.cpp; sourceTree = "<group>"; };
 		443F54A81D8DA52200A747EA /* noiseLayering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noiseLayering.h; sourceTree = "<group>"; };
+		448E32CD1DAC4B0500DB5AF4 /* ppm_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ppm_writer.cpp; path = Common/ppm_writer.cpp; sourceTree = "<group>"; };
+		448E32CE1DAC4B0500DB5AF4 /* ppm_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ppm_writer.h; path = Common/ppm_writer.h; sourceTree = "<group>"; };
+		448E32D01DAC4B1300DB5AF4 /* flood_fill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flood_fill.cpp; sourceTree = "<group>"; };
+		448E32D11DAC4B1300DB5AF4 /* flood_fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flood_fill.h; sourceTree = "<group>"; };
+		448E32D21DAC4B1300DB5AF4 /* plate_fill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plate_fill.cpp; sourceTree = "<group>"; };
+		448E32D31DAC4B1300DB5AF4 /* plate_fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plate_fill.h; sourceTree = "<group>"; };
+		448E32D41DAC4B1300DB5AF4 /* voronoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = voronoi.cpp; sourceTree = "<group>"; };
+		448E32D51DAC4B1300DB5AF4 /* voronoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voronoi.h; sourceTree = "<group>"; };
 		44D3CD4E1BCB24950074E300 /* PCG-Blog */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "PCG-Blog"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D3CD581BCB24B40074E300 /* random_cave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_cave.cpp; sourceTree = "<group>"; };
 		44D3CD591BCB24B40074E300 /* random_dungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_dungeon.cpp; sourceTree = "<group>"; };
@@ -86,6 +98,8 @@
 		443F54971D8DA46F00A747EA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				448E32CD1DAC4B0500DB5AF4 /* ppm_writer.cpp */,
+				448E32CE1DAC4B0500DB5AF4 /* ppm_writer.h */,
 				443F54981D8DA47A00A747EA /* mersenneTwister.cpp */,
 				443F54991D8DA47A00A747EA /* mersenneTwister.h */,
 				443F549A1D8DA47A00A747EA /* random.cpp */,
@@ -136,6 +150,12 @@
 				443F54A41D8DA4A800A747EA /* simplexNoise.cpp */,
 				443F54A81D8DA52200A747EA /* noiseLayering.h */,
 				443F54A71D8DA52200A747EA /* noiseLayering.cpp */,
+				448E32D01DAC4B1300DB5AF4 /* flood_fill.cpp */,
+				448E32D11DAC4B1300DB5AF4 /* flood_fill.h */,
+				448E32D21DAC4B1300DB5AF4 /* plate_fill.cpp */,
+				448E32D31DAC4B1300DB5AF4 /* plate_fill.h */,
+				448E32D41DAC4B1300DB5AF4 /* voronoi.cpp */,
+				448E32D51DAC4B1300DB5AF4 /* voronoi.h */,
 			);
 			path = "PCG-Blog";
 			sourceTree = "<group>";
@@ -207,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D3CD5B1BCB24B40074E300 /* random_dungeon.cpp in Sources */,
+				448E32D81DAC4B1400DB5AF4 /* voronoi.cpp in Sources */,
 				443F54A11D8DA47A00A747EA /* random.cpp in Sources */,
 				44F722501BEABEC20022754F /* perlin_noise.cpp in Sources */,
 				44D3CD881BCDB1D70074E300 /* maze.cpp in Sources */,
@@ -216,8 +237,11 @@
 				44D3CD5A1BCB24B40074E300 /* random_cave.cpp in Sources */,
 				44D3CD851BCDAF7D0074E300 /* diamond_square.cpp in Sources */,
 				44F722531BEAD3D90022754F /* midpoint_displacement.cpp in Sources */,
+				448E32CF1DAC4B0500DB5AF4 /* ppm_writer.cpp in Sources */,
+				448E32D71DAC4B1400DB5AF4 /* plate_fill.cpp in Sources */,
 				44D3CD5D1BCB24EA0074E300 /* main.cpp in Sources */,
 				44EF007F1BFF6D8F00B5AAFF /* worley_noise.cpp in Sources */,
+				448E32D61DAC4B1300DB5AF4 /* flood_fill.cpp in Sources */,
 				443F54A61D8DA4A800A747EA /* simplexNoise.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

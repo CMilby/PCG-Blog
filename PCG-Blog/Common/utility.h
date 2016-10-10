@@ -3,8 +3,10 @@
 //  PCG-Blog
 //
 //  Created by Craig Milby on 10/11/15.
-//  Copyright Â© 2015 Craig Milby. All rights reserved.
+//  Copyright © 2015 Craig Milby. All rights reserved.
 //
+
+#pragma once
 
 #ifndef UTILITY_H
 #define UTILITY_H
@@ -33,6 +35,11 @@ public:
             m_values[ i ] = vect[ i ];
     }
     
+	Vector( const T &p_x, const T &p_y ) {
+		m_values[ 0 ] = p_x;
+		m_values[ 1 ] = p_y;
+	}
+
     inline T Dot( const Vector<T, D> &vect ) const {
         T result = T( 0 );
         for ( unsigned int i = 0; i < D; i++ ) {
@@ -252,9 +259,28 @@ public:
         m_y = y;
     }
     
+	inline void operator=( const Point &p_point ) {
+		m_x = p_point.m_x;
+		m_y = p_point.m_y;
+	}
+
+	inline bool operator==( const Point &p_point ) const {
+		return m_x == p_point.m_x && m_y == p_point.m_y;
+	}
+
     inline Point operator-( const Point &p ) const {
         return Point( m_x - p.m_x, m_y - p.m_y );
     }
+};
+
+namespace std {
+
+	template<>
+	struct hash<Point> {
+		size_t operator()( const Point &p_point ) const {
+			return ( ( hash<int>()( p_point.m_x ) ^ ( hash<int>()( p_point.m_y ) << 1 ) ) >> 1 );
+		}
+	};
 };
 
 namespace Utility {
@@ -281,6 +307,8 @@ namespace Utility {
     float dot( const int *p_g, const float p_x, const float p_y );
     float dot( const int *g, const float x, const float y, const float z );
     int fast_floor( const float x );
+
+	float distance( const int p_x1, const int p_y1, const int p_x2, const int p_y2 );
 }
 
 #endif

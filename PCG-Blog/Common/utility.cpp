@@ -3,7 +3,7 @@
 //  PCG-Blog
 //
 //  Created by Craig Milby on 10/11/15.
-//  Copyright Â© 2015 Craig Milby. All rights reserved.
+//  Copyright © 2015 Craig Milby. All rights reserved.
 //
 
 #include "utility.h"
@@ -102,6 +102,7 @@ int Utility::fast_floor( const float x ) {
     return x > 0 ? ( int ) x : ( int ) x - 1;
 }
 
-
-
+float Utility::distance( const int p_x1, const int p_y1, const int p_x2, const int p_y2 ) {
+	return sqrtf( powf( p_x2 - p_x1, 2.0f ) + powf( p_y2 - p_y1, 2.0f ) );
+}
 
